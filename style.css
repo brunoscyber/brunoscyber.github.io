@@ -35,3 +35,5 @@ h1>span{color:#506d86}.hero-summary{color:#4f687d}.discipline-line{color:#173a58
 .contact-inner{background:radial-gradient(circle at 83% 20%,rgba(77,188,233,.22),transparent 29%),linear-gradient(140deg,rgba(247,249,249,.92),rgba(207,219,225,.88))}
 .contact-link{background:rgba(255,255,255,.62)}
 @media(max-width:960px){.primary-nav{background:rgba(248,252,255,.97)}}
+.education-list{border-block:1px solid var(--line)}.education-list article{display:grid;grid-template-columns:120px 1fr;gap:28px;align-items:center;padding:25px 6px;border-bottom:1px solid var(--line)}.education-list article:last-child{border-bottom:0}.education-list article>span{font:500 9px Ubuntu,sans-serif;letter-spacing:.1em;color:var(--blue)}.education-list p{margin:0 0 3px;color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.08em}.education-list h3{margin:0;font-size:1.15rem}.contact-links-single{grid-template-columns:minmax(260px,520px);justify-content:center}.contact-links-single .contact-link{text-align:center}
+@media(max-width:680px){.education-list article{grid-template-columns:1fr;gap:8px}}
