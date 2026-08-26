@@ -48,5 +48,6 @@ html{scroll-snap-type:y mandatory}.section,.site-footer{scroll-snap-align:start;
 @media(max-width:680px){.profile-frame{padding:7px;border-radius:22px 22px 62px 22px}.profile-frame::before,.profile-frame img{border-radius:16px 16px 55px 16px}.profile-visual figcaption{font-size:7px}.section:not(.hero){align-items:flex-start}.site-footer{min-height:auto}}
 .contact .contact-links{grid-template-columns:repeat(3,minmax(0,1fr));max-width:980px;margin-inline:auto}
 @media(max-width:680px){.contact .contact-links{grid-template-columns:1fr}}
+.contact-link span{font-size:1.08rem;font-weight:600}.contact-link small{font-size:.78rem;line-height:1.5;letter-spacing:.025em;overflow-wrap:anywhere}.contact-inner>p:not(.section-index){font-size:1rem}
 .discipline-line{flex-wrap:wrap}
 @media(max-width:680px){.discipline-line{display:flex}.discipline-line i:nth-of-type(2){display:block}}
