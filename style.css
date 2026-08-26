@@ -51,3 +51,13 @@ html{scroll-snap-type:y mandatory}.section,.site-footer{scroll-snap-align:start;
 .contact-link span{font-size:1.08rem;font-weight:600}.contact-link small{font-size:.78rem;line-height:1.5;letter-spacing:.025em;overflow-wrap:anywhere}.contact-inner>p:not(.section-index){font-size:1rem}
 .discipline-line{flex-wrap:wrap}
 @media(max-width:680px){.discipline-line{display:flex}.discipline-line i:nth-of-type(2){display:block}}
+
+/* Certificates */
+.certificate-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.certificate-card{min-height:175px;padding:22px;border:1px solid var(--line);border-radius:16px;background:rgba(244,247,247,.74);display:flex;flex-direction:column;align-items:flex-start;justify-content:space-between;gap:18px;box-shadow:0 12px 32px rgba(55,77,89,.06);transition:border-color .3s,box-shadow .3s,transform .3s}.certificate-card img,.company-wordmark{width:52px;height:52px;border-radius:12px;object-fit:cover;box-shadow:0 8px 18px rgba(42,67,82,.14)}.company-wordmark{display:grid;place-items:center;border:1px solid var(--line-strong);background:#eef3f4;color:#0877e5;font-size:.72rem;font-weight:700;letter-spacing:.06em}.certificate-card h3{margin:0;font-size:.91rem;line-height:1.42;font-weight:600}.certificates .inline-heading{margin-bottom:34px}
+
+/* Controlled blue-neon interactions */
+.primary-nav a:hover,.primary-nav a:focus-visible{text-shadow:0 0 10px rgba(22,141,255,.65)}.button:hover,.button:focus-visible,.contact-link:hover,.contact-link:focus-visible,.experience-card:hover,.skill-card:hover,.certificate-card:hover,.certificate-card:focus-within,.education-list article:hover{border-color:rgba(22,141,255,.72);box-shadow:0 0 0 1px rgba(22,141,255,.12),0 0 22px rgba(22,141,255,.24),0 15px 40px rgba(42,78,103,.13)}.certificate-card:hover{transform:translateY(-4px)}.certificate-card:hover img,.certificate-card:hover .company-wordmark{box-shadow:0 0 20px rgba(22,141,255,.4)}.education-list article{transition:background-color .3s,box-shadow .3s}.education-list article:hover{background:rgba(236,247,255,.55)}
+@media(max-width:960px){.certificate-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:680px){.certificate-grid{grid-template-columns:1fr 1fr}.certificate-card{min-height:165px;padding:18px}.certificate-card h3{font-size:.84rem}}
+@media(max-width:430px){.certificate-grid{grid-template-columns:1fr}.certificate-card{min-height:145px}}
+@media(hover:none){.button:hover,.contact-link:hover,.experience-card:hover,.skill-card:hover,.certificate-card:hover,.education-list article:hover{box-shadow:none;transform:none}}
