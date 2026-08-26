@@ -61,3 +61,34 @@ html{scroll-snap-type:y mandatory}.section,.site-footer{scroll-snap-align:start;
 @media(max-width:680px){.certificate-grid{grid-template-columns:1fr 1fr}.certificate-card{min-height:165px;padding:18px}.certificate-card h3{font-size:.84rem}}
 @media(max-width:430px){.certificate-grid{grid-template-columns:1fr}.certificate-card{min-height:145px}}
 @media(hover:none){.button:hover,.contact-link:hover,.experience-card:hover,.skill-card:hover,.certificate-card:hover,.education-list article:hover{box-shadow:none;transform:none}}
+
+/* Frosted Crystal / Mineral Ice — refined visual identity */
+:root{--bg:#aeb6bb;--bg-soft:#c7cdd0;--panel:#dce1e2;--panel-2:#bdc5c9;--line:rgba(36,46,52,.18);--line-strong:rgba(124,183,211,.48);--text:#080b0d;--muted:#45535a;--blue:#79b5d0;--blue-bright:#4f8faa;--cyan:#b9dfef;--shadow:0 28px 70px rgba(25,32,36,.18),inset 0 1px rgba(255,255,255,.58)}
+body{background:#aeb6bb;color:var(--text)}
+body::before{background:radial-gradient(ellipse at 83% 8%,rgba(240,245,246,.72),transparent 19%),radial-gradient(ellipse at 12% 68%,rgba(226,232,233,.52),transparent 28%),radial-gradient(circle at 68% 46%,rgba(91,106,113,.22),transparent 26%),linear-gradient(137deg,#c8ced1 0%,#9ea8ae 33%,#d2d7d9 63%,#929da3 100%)}
+body::after{opacity:.42;background-image:linear-gradient(117deg,transparent 49.84%,rgba(228,244,250,.55) 49.94%,rgba(74,105,119,.2) 50%,transparent 50.16%),linear-gradient(31deg,transparent 49.9%,rgba(172,215,233,.3) 49.98%,transparent 50.1%),radial-gradient(ellipse at 50% 50%,rgba(255,255,255,.2),transparent 64%);background-size:520px 520px,690px 690px,100% 100%;background-position:20px -80px,130px 60px,0 0;mask-image:linear-gradient(to bottom,black,rgba(0,0,0,.62) 85%,transparent)}
+.ambient span{background:#d5edf7;box-shadow:0 0 16px rgba(181,222,239,.62);opacity:.42}
+.site-header.scrolled{background:rgba(207,214,217,.78);border-color:rgba(42,53,58,.16);box-shadow:0 10px 35px rgba(35,43,47,.09)}
+.brand>span:last-child>span{color:#31586a}.brand-mark{color:#173a4a;border-color:rgba(79,126,148,.42);background:linear-gradient(145deg,rgba(246,249,249,.74),rgba(137,151,158,.28));box-shadow:inset 0 1px rgba(255,255,255,.8),0 7px 22px rgba(31,39,43,.12)}
+.primary-nav a{color:#34434a}.primary-nav a:hover,.primary-nav a:focus-visible{color:#050708;text-shadow:none}.primary-nav a::after{background:linear-gradient(90deg,transparent,#93c8de,transparent);height:2px;filter:blur(.2px)}
+h1>span{color:#3d4b52}.hero-summary,.about-copy>p:not(.lead),.inline-heading>p,.experience-card p:not(.card-label),.skill-card li,.intelligence-copy>p:not(.section-index),.intel-list p,.section-heading>p:not(.section-index),.contact-inner>p:not(.section-index){color:var(--muted)}
+h2 em,.eyebrow,.section-index,.card-label{color:#376d85}.discipline-line{color:#18252b}.status-dot{background:#cae9f5;box-shadow:0 0 0 5px rgba(199,229,241,.18),0 0 14px rgba(182,218,233,.38)}
+.section-tinted{background:linear-gradient(140deg,rgba(224,228,229,.56),rgba(123,135,141,.18));border-color:rgba(38,48,53,.16)}
+.experience-card,.skill-card,.placeholder-card,.certificate-card,.credential-placeholder{border-color:rgba(42,52,57,.17);background:linear-gradient(148deg,rgba(232,236,237,.74),rgba(154,165,170,.48));box-shadow:0 18px 45px rgba(28,35,39,.1),inset 0 1px rgba(255,255,255,.68)}
+.experience-card.featured{background:radial-gradient(circle at 86% 11%,rgba(193,226,239,.35),transparent 22%),linear-gradient(150deg,rgba(187,196,200,.9),rgba(231,234,235,.74))}
+.principles div,.intel-flow span,.contact-link,.button-secondary{background:linear-gradient(145deg,rgba(239,242,242,.58),rgba(157,168,173,.3));border-color:rgba(43,53,58,.17)}
+.tag-list li{color:#33464f;background:rgba(238,241,242,.4)}
+.skill-icon,.credential-seal{color:#315f73;border-color:rgba(104,164,191,.45);background:rgba(227,235,238,.45);box-shadow:inset 0 1px rgba(255,255,255,.68)}
+.button{transition:transform .45s ease,border-color .45s ease,box-shadow .45s ease,background .45s ease}.button-primary{color:#f4f8f9;background:linear-gradient(145deg,#30383c,#0b0e10 58%,#27353b);border-color:rgba(190,221,233,.45);box-shadow:0 14px 30px rgba(25,31,34,.2),inset 0 1px rgba(220,238,244,.2)}
+.button-primary:hover{box-shadow:0 18px 36px rgba(22,28,31,.24),inset 0 1px rgba(227,242,248,.32)}.button-secondary:hover{background:linear-gradient(145deg,rgba(245,248,248,.68),rgba(167,190,200,.42));border-color:rgba(121,181,208,.55)}
+.profile-visual::before{background:radial-gradient(circle at 28% 18%,rgba(245,248,249,.74),transparent 22%),conic-gradient(from 210deg,rgba(123,176,199,.22),transparent 17%,rgba(214,235,243,.35) 24%,transparent 42%,rgba(255,255,255,.55) 48%,transparent 64%);filter:blur(18px);opacity:.72}
+.profile-frame{border-color:rgba(112,153,171,.48);background:linear-gradient(146deg,rgba(239,243,244,.82),rgba(113,126,133,.58));box-shadow:0 38px 80px rgba(24,30,34,.28),0 0 0 1px rgba(255,255,255,.55) inset,0 12px 35px rgba(120,166,186,.12)}
+.profile-frame::after{width:1px;background:linear-gradient(transparent,rgba(201,233,245,.88),rgba(92,151,177,.52),transparent);box-shadow:0 0 9px rgba(176,218,235,.35);opacity:.62}.profile-frame img{filter:saturate(.74) contrast(1.02) brightness(.97)}.profile-visual figcaption span:first-child{color:#315f73}
+.contact-inner{background:radial-gradient(circle at 83% 20%,rgba(190,225,239,.3),transparent 28%),linear-gradient(142deg,rgba(225,230,231,.82),rgba(137,149,155,.62));box-shadow:var(--shadow)}
+.contact-link{transition:transform .45s ease,border-color .45s ease,box-shadow .45s ease,background .45s ease}.contact-link small{color:#315f73}
+.certificate-card,.experience-card,.skill-card,.placeholder-card,.education-list article{transition:transform .5s ease,border-color .5s ease,box-shadow .5s ease,background .5s ease}
+.button:hover,.button:focus-visible,.contact-link:hover,.contact-link:focus-visible,.experience-card:hover,.skill-card:hover,.certificate-card:hover,.certificate-card:focus-within,.education-list article:hover{border-color:rgba(151,201,222,.6);box-shadow:0 20px 48px rgba(24,31,35,.15),inset 0 1px rgba(255,255,255,.76),0 0 18px rgba(194,227,240,.16)}
+.certificate-card:hover img,.certificate-card:hover .company-wordmark{box-shadow:0 12px 25px rgba(32,43,48,.18)}.education-list article:hover{background:linear-gradient(90deg,rgba(231,237,239,.48),rgba(183,206,216,.22))}
+.company-wordmark{background:#dce3e5;color:#315f73}.site-footer p{color:#3f4d54}:focus-visible{outline-color:#5f9bb5}
+@media(max-width:960px){.primary-nav{background:rgba(213,219,221,.96);border-color:rgba(41,52,57,.18)}}
+@media(hover:none){.button:hover,.contact-link:hover,.experience-card:hover,.skill-card:hover,.certificate-card:hover,.education-list article:hover{box-shadow:0 12px 30px rgba(25,32,36,.1),inset 0 1px rgba(255,255,255,.58)}}
