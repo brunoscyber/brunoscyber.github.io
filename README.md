@@ -1,6 +1,6 @@
 # BrunoSCyber — Personal Portfolio
 
-Site pessoal e portfólio profissional de Bruno Silva, com foco em Cybersecurity, Security Operations, Cyber Intelligence, Threat Analysis, Incident Investigation e OSINT.
+Site pessoal e portfólio profissional de Bruno Neris, com foco em Cybersecurity, Security Operations, Cyber Intelligence, Threat Analysis, Incident Investigation e OSINT.
 
 ## Stack
 
@@ -44,4 +44,4 @@ Links profissionais, currículo, projetos, cases e certificações permanecem co
 
 ## Autor
 
-Bruno Silva — [@brunoscyber](https://github.com/brunoscyber)
+Bruno Neris — [@brunoscyber](https://github.com/brunoscyber)
