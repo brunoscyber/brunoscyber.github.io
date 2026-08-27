@@ -149,3 +149,6 @@ body::after{opacity:.5;background-image:linear-gradient(116.8deg,transparent 49.
 @media(max-width:680px){.experience-card.featured{grid-row:auto}}
 @media(hover:hover) and (pointer:fine){.hero-actions .button:hover,.hero-actions .button:focus-visible{transform:translateY(-3px);border-color:rgba(2,4,5,.94);box-shadow:0 0 0 1px rgba(226,242,248,.62),0 0 0 3px rgba(2,3,4,.86),0 0 22px rgba(0,0,0,.32),0 18px 34px rgba(9,13,15,.22),inset 0 1px rgba(255,255,255,.18)}.hero-actions .button-secondary:hover,.hero-actions .button-secondary:focus-visible{background:linear-gradient(150deg,rgba(243,248,249,.78),rgba(163,182,190,.46));color:#080b0d}}
 @media(prefers-reduced-motion:reduce) and (hover:hover) and (pointer:fine){.hero-actions .button:hover,.hero-actions .button:focus-visible{transform:none}}
+
+/* Skills without abbreviation badges */
+.skill-card h3{margin-top:0}
