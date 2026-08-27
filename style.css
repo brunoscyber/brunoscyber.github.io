@@ -169,3 +169,9 @@ html{scroll-snap-type:none;scroll-behavior:smooth;scrollbar-gutter:stable}
 .experience-card.featured .card-label{color:#276f8d;text-shadow:0 0 9px rgba(139,218,248,.32)}
 @media(hover:hover) and (pointer:fine){.experience-card.featured:hover{border-color:rgba(183,232,250,.94);box-shadow:0 0 0 1px rgba(233,249,255,.72),0 0 0 3px rgba(4,7,9,.7),0 0 25px rgba(112,201,236,.22),0 24px 48px rgba(13,17,19,.2),inset 0 1px rgba(255,255,255,.8)}}
 @media(max-width:680px){.experience-grid{grid-template-columns:1fr;grid-auto-rows:auto;gap:12px}.experience-card,.experience-card.featured{min-height:auto;height:auto;padding:27px 22px}}
+
+/* Bright mineral-ice frame for the hero portrait */
+.profile-frame{border-color:rgba(197,238,252,.96);box-shadow:0 0 0 1px rgba(246,253,255,.82),0 0 20px rgba(126,207,239,.22),0 40px 84px rgba(30,43,50,.25),inset 0 1px rgba(255,255,255,.94),inset 0 -1px rgba(103,166,191,.16)}
+.profile-frame::before{box-shadow:inset 0 0 0 1px rgba(235,249,254,.78),inset 0 10px 22px rgba(255,255,255,.08),inset 0 -80px 75px rgba(7,22,29,.13)}
+.profile-visual::before{opacity:.86}
+@media(hover:hover) and (pointer:fine){.profile-frame:hover{border-color:rgba(190,235,251,.96);box-shadow:0 0 0 1px rgba(239,251,255,.76),0 0 0 4px rgba(3,5,6,.76),0 0 30px rgba(99,194,232,.2),0 42px 88px rgba(18,25,29,.28),inset 0 1px rgba(255,255,255,.82)}}
