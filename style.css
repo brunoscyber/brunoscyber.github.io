@@ -152,3 +152,12 @@ body::after{opacity:.5;background-image:linear-gradient(116.8deg,transparent 49.
 
 /* Skills without abbreviation badges */
 .skill-card h3{margin-top:0}
+
+/* Continuous natural scrolling */
+html{scroll-snap-type:none;scroll-behavior:smooth;scrollbar-gutter:stable}
+.section,.site-footer{scroll-snap-align:none;scroll-snap-stop:normal}
+.section{min-height:auto}
+.section:not(.hero){display:block}
+.site-footer{min-height:auto}
+@media(max-width:960px){html{scroll-snap-type:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
