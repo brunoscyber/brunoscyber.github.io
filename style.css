@@ -161,3 +161,11 @@ html{scroll-snap-type:none;scroll-behavior:smooth;scrollbar-gutter:stable}
 .site-footer{min-height:auto}
 @media(max-width:960px){html{scroll-snap-type:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Balanced experience cards and current-role ice highlight */
+.experience-grid{grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-rows:1fr;align-items:stretch;gap:16px}
+.experience-card,.experience-card.featured{grid-row:auto;min-height:320px;height:100%;align-items:flex-start;padding:30px}
+.experience-card.featured{border-color:rgba(191,235,251,.9);box-shadow:0 0 0 1px rgba(242,252,255,.7),0 0 18px rgba(124,205,237,.18),0 20px 48px rgba(38,52,59,.13),inset 0 1px rgba(255,255,255,.92)}
+.experience-card.featured .card-label{color:#276f8d;text-shadow:0 0 9px rgba(139,218,248,.32)}
+@media(hover:hover) and (pointer:fine){.experience-card.featured:hover{border-color:rgba(183,232,250,.94);box-shadow:0 0 0 1px rgba(233,249,255,.72),0 0 0 3px rgba(4,7,9,.7),0 0 25px rgba(112,201,236,.22),0 24px 48px rgba(13,17,19,.2),inset 0 1px rgba(255,255,255,.8)}}
+@media(max-width:680px){.experience-grid{grid-template-columns:1fr;grid-auto-rows:auto;gap:12px}.experience-card,.experience-card.featured{min-height:auto;height:auto;padding:27px 22px}}
