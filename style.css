@@ -180,3 +180,7 @@ html{scroll-snap-type:none;scroll-behavior:smooth;scrollbar-gutter:stable}
 .experience-card.featured{border-color:rgba(145,220,249,.98);background:radial-gradient(circle at 84% 10%,rgba(218,244,253,.62),transparent 24%),radial-gradient(circle at 13% 2%,rgba(255,255,255,.48),transparent 28%),linear-gradient(154deg,rgba(207,220,226,.92),rgba(241,246,247,.82) 62%,rgba(173,192,201,.58));box-shadow:0 0 0 1px rgba(240,252,255,.82),0 0 24px rgba(104,201,239,.24),0 22px 52px rgba(37,53,60,.15),inset 0 2px rgba(245,253,255,.96),inset 0 -1px rgba(95,165,193,.15)}
 .experience-card.featured .card-label{color:#175f7e;font-weight:700;text-shadow:0 0 10px rgba(126,214,248,.38)}
 .experience-card.featured h3{color:#0b2835}
+
+/* Frozen mineral separators between sections */
+main>.section+.section,.site-footer{border-top:1px solid transparent;border-image:linear-gradient(90deg,rgba(232,247,252,.35) 0%,rgba(247,253,255,.92) 13%,rgba(139,211,240,.82) 28%,rgba(250,254,255,.98) 49%,rgba(172,224,245,.78) 72%,rgba(239,250,253,.42) 100%) 1;box-shadow:inset 0 1px rgba(255,255,255,.7),0 -1px 8px rgba(119,199,231,.2)}
+.section-tinted{border-bottom:0}
