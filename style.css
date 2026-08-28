@@ -184,3 +184,34 @@ html{scroll-snap-type:none;scroll-behavior:smooth;scrollbar-gutter:stable}
 /* Frozen mineral separators between sections */
 main>.section+.section,.site-footer{border-top:1px solid transparent;border-image:linear-gradient(90deg,rgba(232,247,252,.35) 0%,rgba(247,253,255,.92) 13%,rgba(139,211,240,.82) 28%,rgba(250,254,255,.98) 49%,rgba(172,224,245,.78) 72%,rgba(239,250,253,.42) 100%) 1;box-shadow:inset 0 1px rgba(255,255,255,.7),0 -1px 8px rgba(119,199,231,.2)}
 .section-tinted{border-bottom:0}
+
+/* Etched crystal section labels */
+.section-index{--label-dot-offset:42px;display:block;width:auto;margin-bottom:0;color:inherit;background:transparent}
+.section-label-text{display:block;padding-left:var(--label-dot-offset);color:rgba(20,73,98,.78);font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-shadow:0 1px rgba(255,255,255,.55)}
+.section-label-track{position:relative;display:block;width:min(360px,42vw);height:1px;margin-top:10px}
+.section-label-track::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(137,211,235,.75) 0%,rgba(215,238,245,.72) 22%,rgba(255,255,255,.55) 65%,rgba(255,255,255,.25) 100%);box-shadow:0 0 4px rgba(132,211,238,.18);transform:scaleX(0);transform-origin:left;transition:transform .82s ease .12s}
+.section-label-track::after{content:"";position:absolute;left:0;top:0;width:var(--label-dot-offset);height:1px;background:linear-gradient(90deg,rgba(230,247,252,.18),rgba(209,241,251,.62) 62%,rgba(235,251,255,.96));box-shadow:0 0 5px rgba(117,207,238,.25);transform:scaleX(0);transform-origin:left;transition:transform .72s ease .2s}
+.section-label-dot{position:absolute;z-index:1;left:var(--label-dot-offset);top:50%;width:5px;height:5px;transform:translate(-50%,-50%);border-radius:50%;background:rgba(218,247,255,.98);box-shadow:0 0 0 2px rgba(141,216,239,.18),0 0 7px rgba(98,200,235,.4),0 0 14px rgba(98,200,235,.18);opacity:.55;transition:opacity .7s ease .08s,box-shadow .8s ease .08s}
+.section-index+h2{margin-top:24px}
+.section-heading .section-index+h2{margin-top:24px}
+.reveal .section-label-text{opacity:.45;filter:blur(2px);transform:translateY(3px);transition:opacity .72s ease,filter .72s ease,transform .72s ease}
+.reveal.visible .section-label-text{opacity:1;filter:none;transform:none}
+.reveal.visible .section-label-track::before,.reveal.visible .section-label-track::after{transform:scaleX(1)}
+.reveal.visible .section-label-dot{opacity:1;box-shadow:0 0 0 2px rgba(162,226,246,.24),0 0 8px rgba(75,190,232,.82),0 0 17px rgba(82,193,234,.38)}
+.contact-inner>.section-index{width:min(360px,42vw);margin-inline:auto;text-align:left}.contact-inner>.section-index .section-label-track{width:100%}
+@media(max-width:680px){.section-index{--label-dot-offset:30px}.section-label-text{font-size:9px;letter-spacing:.14em}.section-label-track{width:min(240px,70vw)}.contact-inner>.section-index{width:min(240px,70vw)}.section-index+h2,.section-heading .section-index+h2{margin-top:19px}}
+@media(prefers-reduced-motion:reduce){.reveal .section-label-text{opacity:1;filter:none;transform:none;transition:none}.section-label-track::before,.section-label-track::after{transform:scaleX(1);transition:none}.section-label-dot{opacity:1;transition:none}}
+
+/* Subtle mineral type depth test */
+h1,h2{text-shadow:0 1px 0 rgba(255,255,255,.48),0 3px 8px rgba(25,40,47,.18),0 8px 18px rgba(38,55,63,.07)}
+h1>span,h2 em{text-shadow:0 1px 0 rgba(241,250,253,.5),0 3px 8px rgba(42,82,99,.17)}
+h3,.lead{ text-shadow:0 1px 0 rgba(255,255,255,.38),0 2px 5px rgba(29,44,51,.13)}
+.hero-summary,.about-copy>p:not(.lead),.inline-heading>p,.experience-card p:not(.card-label),.skill-card li,.education-list p,.contact-inner>p:not(.section-index){text-shadow:0 1px 0 rgba(255,255,255,.28),0 2px 4px rgba(35,51,58,.08)}
+@media(max-width:680px){h1,h2{text-shadow:0 1px rgba(255,255,255,.4),0 2px 6px rgba(25,40,47,.14)}h3,.lead{ text-shadow:0 1px rgba(255,255,255,.3),0 2px 4px rgba(29,44,51,.1)}}
+
+/* Crystal borders with Piano Black depth */
+@media(hover:hover) and (pointer:fine){
+.experience-card:hover,.experience-card:focus-within,.skill-card:hover,.skill-card:focus-within,.certificate-card:hover,.certificate-card:focus-within,.contact-link:hover,.contact-link:focus-visible,.principles div:hover,.education-list article:hover{border-color:rgba(139,220,249,.96);box-shadow:0 0 0 1px rgba(236,250,255,.76),0 0 13px rgba(100,202,240,.34),0 22px 46px rgba(0,0,0,.28),inset 0 1px rgba(255,255,255,.78)}
+.experience-card.featured:hover{border-color:rgba(160,228,252,.98);box-shadow:0 0 0 1px rgba(239,252,255,.82),0 0 16px rgba(102,207,245,.4),0 24px 50px rgba(0,0,0,.3),inset 0 1px rgba(255,255,255,.82)}
+.profile-frame:hover{border-color:rgba(164,229,252,.98);box-shadow:0 0 0 1px rgba(241,252,255,.82),0 0 18px rgba(91,199,239,.38),0 42px 88px rgba(0,0,0,.31),inset 0 1px rgba(255,255,255,.82)}
+}
