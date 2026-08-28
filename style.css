@@ -215,3 +215,15 @@ h3,.lead{ text-shadow:0 1px 0 rgba(255,255,255,.38),0 2px 5px rgba(29,44,51,.13)
 .experience-card.featured:hover{border-color:rgba(160,228,252,.98);box-shadow:0 0 0 1px rgba(239,252,255,.82),0 0 16px rgba(102,207,245,.4),0 24px 50px rgba(0,0,0,.3),inset 0 1px rgba(255,255,255,.82)}
 .profile-frame:hover{border-color:rgba(164,229,252,.98);box-shadow:0 0 0 1px rgba(241,252,255,.82),0 0 18px rgba(91,199,239,.38),0 42px 88px rgba(0,0,0,.31),inset 0 1px rgba(255,255,255,.82)}
 }
+
+/* Interactive hero disciplines */
+.discipline-line{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin:27px 0 34px}
+.discipline-line span{display:inline-flex;align-items:center;min-height:30px;padding:5px 10px;border:1px solid rgba(60,86,98,.2);border-radius:7px;color:#263e49;background:linear-gradient(145deg,rgba(239,244,245,.58),rgba(148,164,171,.24));box-shadow:inset 0 1px rgba(255,255,255,.68),0 6px 14px rgba(31,43,49,.07);font:500 9px Ubuntu,sans-serif;letter-spacing:.08em;transition:transform .28s ease,border-color .28s ease,box-shadow .28s ease,background .28s ease}
+@media(hover:hover) and (pointer:fine){.discipline-line span:hover{transform:translateY(-3px);border-color:rgba(139,220,249,.96);background:linear-gradient(145deg,rgba(241,247,248,.7),rgba(151,169,177,.3));box-shadow:0 0 0 1px rgba(236,250,255,.74),0 0 12px rgba(99,202,241,.32),0 16px 28px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.78)}}
+@media(max-width:680px){.discipline-line{display:flex;gap:6px}.discipline-line span{min-height:28px;padding:4px 8px;font-size:8px}}
+@media(prefers-reduced-motion:reduce){.discipline-line span:hover{transform:none}}
+
+/* Stronger portrait interaction */
+.profile-frame::after{transition:opacity .5s ease,box-shadow .5s ease}
+@media(hover:hover) and (pointer:fine){.profile-frame:hover{transform:translateY(-6px) scale(1.018);border-color:rgba(174,234,254,1);box-shadow:0 0 0 1px rgba(244,253,255,.9),0 0 25px rgba(80,196,239,.52),0 48px 96px rgba(0,0,0,.36),inset 0 1px rgba(255,255,255,.88)}.profile-frame:hover::after{opacity:1;box-shadow:0 0 20px rgba(114,209,244,.72)}}
+@media(prefers-reduced-motion:reduce) and (hover:hover) and (pointer:fine){.profile-frame:hover{transform:none}}
